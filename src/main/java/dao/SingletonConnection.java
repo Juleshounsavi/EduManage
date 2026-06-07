@@ -11,10 +11,14 @@ public class SingletonConnection {
 
     static {
         try {
-            String dbPass = System.getenv("DB_PASSWORD");
+            String url  = System.getenv("DB_URL") != null ?
+                    System.getenv("DB_URL") :
+                    "jdbc:mysql://localhost:3306/gestion_scolaire?createDatabaseIfNotExist=true";
+            String pass = System.getenv("DB_PASSWORD");
 
             Map<String, String> properties = new HashMap<>();
-            properties.put("jakarta.persistence.jdbc.password", dbPass);
+            properties.put("jakarta.persistence.jdbc.url",      url);
+            properties.put("jakarta.persistence.jdbc.password", pass);
 
             EntityManagerFactory emf = Persistence.createEntityManagerFactory("GestionScolairePU", properties);
             em = emf.createEntityManager();
