@@ -1,7 +1,7 @@
 # EduManage
 
 Application web de gestion scolaire développée dans le cadre du module
-**Génie Logiciel & DevOps** — Filière IDSI, Université Hassan II, FST Mohammedia 2025-2026.
+**Java Avancée - Systèmes Distribuées** — Filière IDSI, Université Hassan II, FST Mohammedia 2025-2026.
 
 ---
 
@@ -9,6 +9,12 @@ Application web de gestion scolaire développée dans le cadre du module
 
 EduManage permet à un administrateur scolaire de gérer les élèves, classes,
 matières et notes, avec calcul automatique des moyennes et export des relevés en PDF.
+
+## Démo en ligne
+
+**URL** : https://edumanage-production-7063.up.railway.app/login
+
+Identifiants par défaut : `admin@test.com` / `123`
 
 ## Fonctionnalités
 
@@ -31,6 +37,7 @@ matières et notes, avec calcul automatique des moyennes et export des relevés 
 | Tomcat 10/11 | Serveur d'application |
 | Docker | Conteneurisation |
 | GitHub Actions | CI/CD automatisé |
+| Railway | Hébergement cloud |
 
 ## Lancement avec Docker (recommandé)
 
@@ -41,17 +48,14 @@ matières et notes, avec calcul automatique des moyennes et export des relevés 
 git clone https://github.com/Juleshounsavi/EduManage.git
 cd EduManage
 
-# 2. Builder le WAR
-./mvnw clean package -DskipTests
-
-# 3. Lancer l'app + MySQL
+# 2. Lancer l'app + MySQL
 docker-compose up --build
 ```
 
 Accéder à l'application : `http://localhost:8080/login`
 Identifiants par défaut : `admin@test.com` / `123`
 
-## Lancement local (sans Docker)
+##  Lancement local (sans Docker)
 
 **Prérequis** : Java 17+, Maven, MySQL 8, Tomcat 10
 
@@ -63,9 +67,8 @@ cd EduManage
 # 2. Définir la variable d'environnement
 setx DB_PASSWORD "votre_mot_de_passe_mysql"
 
-# 3. Builder et déployer
+# 3. Builder et déployer via IntelliJ avec Tomcat
 ./mvnw clean package -DskipTests
-# Copier le WAR dans Tomcat ou lancer via IntelliJ
 ```
 
 Accéder à l'application : `http://localhost:8080/login`
@@ -76,6 +79,7 @@ A chaque push sur `main`, GitHub Actions :
 1. Compile le projet avec Maven
 2. Lance les tests JUnit
 3. Construit l'image Docker
+4. Railway redéploie automatiquement
 
 ## Contributeurs
 
