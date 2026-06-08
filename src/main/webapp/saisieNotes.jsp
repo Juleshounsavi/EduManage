@@ -87,12 +87,24 @@
     <form action="notes" method="post" class="form-grid">
       <div>
         <label><i class="fas fa-user-graduate"></i> Étudiant</label>
-        <select name="eleveId" required>
+        <select name="eleveId" id="eleveSelect" required>
           <option value="">Sélectionner un élève</option>
-          <% if(eleves != null) { for(Eleve e : eleves) { %>
-          <option value="<%= e.getId() %>"><%= e.getNom().toUpperCase() %> <%= e.getPrenom() %></option>
+
+          <% if(eleves != null) {
+            for(Eleve e : eleves) { %>
+
+          <option
+                  value="<%= e.getId() %>"
+                  data-classe="<%= e.getClasse().getNom() %>">
+
+            <%= e.getNom().toUpperCase() %> <%= e.getPrenom() %>
+
+          </option>
+
           <% } } %>
         </select>
+
+        <div id="classeInfo" style="margin-top:6px; font-size:13px; color:#64748b;"></div>
       </div>
 
       <div>
