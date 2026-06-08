@@ -5,6 +5,7 @@
 %>
 <html>
 <head>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
   <title>Modifier Matière | FST</title>
   <style>
     body { font-family: 'Inter', sans-serif; background: #f8fafc; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
