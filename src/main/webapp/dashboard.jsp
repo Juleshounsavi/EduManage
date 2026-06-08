@@ -10,7 +10,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" href="${pageContext.request.contextPath}/favicon.ico">
     <meta charset="UTF-8">
     <title>Espace Administratif | FST</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">

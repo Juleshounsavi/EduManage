@@ -25,9 +25,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
   <meta charset="UTF-8">
   <title>Relevé de Notes Officiel | <%= eleve.getNom() %></title>
+  <link rel="icon" href="${pageContext.request.contextPath}/favicon.ico">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 
