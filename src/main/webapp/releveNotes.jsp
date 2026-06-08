@@ -213,7 +213,7 @@
 
     const opt = {
       margin:       0,
-      filename:     'Releve_Officiel_<%= eleve.getMatricule() %>.pdf',
+      filename:     'Releve_Officiel_<%= eleve.getNom() %>_<%= eleve.getPrenom() %>.pdf',
       image:        { type: 'png' },
       html2canvas:  { scale: 2, useCORS: true, scrollX: 0, scrollY: 0 },
       jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
