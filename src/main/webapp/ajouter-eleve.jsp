@@ -16,7 +16,7 @@
 <head>
     <link rel="icon" href="${pageContext.request.contextPath}/favicon.ico">
     <meta charset="UTF-8">
-    <title>Inscrire Étudiant | FST</title>
+    <title>Inscrire Étudiant | FSTM</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
@@ -70,12 +70,13 @@
 
 <nav class="navbar">
     <div class="navbar-brand">
-        <i class="fas fa-university"></i>
-        <span>EduManage | FSTM</span>
+        <a href="https://edumanage-production-7063.up.railway.app/dashboard.jsp"
+           style="text-decoration: none; color: inherit;">
+            <i class="fas fa-university"></i>
+            <span>EduManage | FSTM</span>
+        </a>
     </div>
-    <div style="font-size: 14px;">
-        <i class="fas fa-user-circle"></i> <%= admin.getNom() %>
-    </div>
+
 </nav>
 
 <div class="container">
@@ -89,7 +90,7 @@
             <div class="form-grid">
                 <div class="field-group full-width">
                     <label>Matricule</label>
-                    <input type="text" name="matricule" placeholder="Ex: 2024-001" required>
+                    <input type="text" name="matricule" placeholder="Ex: 2026-0001" required>
                 </div>
 
                 <div class="field-group">

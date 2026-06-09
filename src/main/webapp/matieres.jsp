@@ -11,7 +11,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Configuration des Matières | FST</title>
+  <title>Configuration des Matières | FSTM</title>
   <link rel="icon" href="${pageContext.request.contextPath}/favicon.ico">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -88,11 +88,13 @@
 
 <nav class="navbar">
   <div class="navbar-brand">
-    <i class="fas fa-university" style="color: var(--fst-orange); font-size: 26px;"></i>
-    <span>FST | Académique</span>
+    <a href="https://edumanage-production-7063.up.railway.app/dashboard.jsp"
+       style="text-decoration: none; color: inherit;">
+      <i class="fas fa-university" style="color: var(--fst-orange); font-size: 26px;"></i>
+      <span>EduManage | Matières</span>
+    </a>
   </div>
   <div style="display: flex; align-items: center; gap: 20px;">
-    <span style="font-size: 14px;"><i class="fas fa-user-circle"></i> <%= admin.getNom() %></span>
     <a href="logout" class="btn-logout"><i class="fas fa-sign-out-alt"></i> Déconnexion</a>
   </div>
 </nav>

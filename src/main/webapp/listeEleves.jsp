@@ -100,11 +100,13 @@
 
 <nav class="navbar">
     <div class="navbar-brand">
-        <i class="fas fa-university" style="color: var(--fst-orange); font-size: 26px;"></i>
-        <span>FST | Académique</span>
+        <a href="https://edumanage-production-7063.up.railway.app/dashboard.jsp"
+           style="text-decoration: none; color: inherit;">
+            <i class="fas fa-university" style="color: var(--fst-orange); font-size: 26px;"></i>
+            <span>EduManage | Étudiants</span>
+        </a>
     </div>
     <div style="display: flex; align-items: center; gap: 20px;">
-        <span style="font-size: 14px;"><i class="fas fa-user-circle"></i> <%= admin.getNom() %></span>
         <a href="logout" class="btn-logout"><i class="fas fa-sign-out-alt"></i> Déconnexion</a>
     </div>
 </nav>

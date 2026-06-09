@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Authentification | FST</title>
+    <title>Authentification | EduManage | FSTM</title>
     <link rel="icon" href="${pageContext.request.contextPath}/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -41,10 +41,10 @@
 
 <div class="login-wrapper">
     <div class="login-brand">
-        <div class="univ-logo">Université Publique</div>
+        <div class="univ-logo">EduManage</div>
         <i class="fas fa-university brand-icon"></i>
-        <h1>FST</h1>
-        <p>Faculté des Sciences et Techniques<br><br>Système Global de Gestion Académique</p>
+        <h1>FSTM</h1>
+        <p>Système Global de Gestion Académique</p>
     </div>
 
     <div class="login-form-container">

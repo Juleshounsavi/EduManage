@@ -6,7 +6,7 @@
 <html>
 <head>
   <link rel="icon" href="${pageContext.request.contextPath}/favicon.ico">
-  <title>Modifier Matière | FST</title>
+  <title>Modifier Matière | FSTM</title>
   <style>
     body { font-family: 'Inter', sans-serif; background: #f8fafc; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
     .card { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); width: 400px; border: 1px solid #e2e8f0; }

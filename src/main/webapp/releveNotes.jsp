@@ -110,13 +110,13 @@
   <div class="doc-header">
     <div class="header-left">
       <i class="fas fa-graduation-cap header-logo"></i>
-      <h1>FST</h1>
-      <h2>Faculté des Sciences et Techniques</h2>
+      <h1>FSTM</h1>
+      <h2>Faculté des Sciences et Techniques de Mohammedia</h2>
     </div>
     <div class="header-right">
       <p><strong>Année Universitaire :</strong> 2025/2026</p>
       <p><strong>Édité le :</strong> <%= dateEdition %></p>
-      <p><strong>Réf :</strong> FST/SCOL/<%= eleve.getMatricule().replaceAll("[^0-9]", "") %></p>
+      <p><strong>Réf :</strong> FSTM/MAT/<%= eleve.getMatricule().replaceAll("[^0-9]", "") %></p>
     </div>
   </div>
 
@@ -138,7 +138,7 @@
   <table class="grades-table">
     <thead>
     <tr>
-      <th>Module / Éléments constitutifs</th>
+      <th>Modules</th>
       <th class="col-center">Coefficient</th>
       <th class="col-center">Note / 20</th>
       <th class="col-center">Note Pondérée</th>
@@ -197,11 +197,9 @@
   </div>
 
   <div class="signatures">
+
     <div class="sig-box">
-      <div class="sig-title">Signature de l'Étudiant(e)</div>
-    </div>
-    <div class="sig-box">
-      <div class="sig-title">Le Doyen / Le Directeur</div>
+      <div class="sig-title">Le Doyen/La Doyenne</div>
       <p style="font-size: 11px; font-style: italic; color: #555;">(Cachet de l'établissement et signature)</p>
     </div>
   </div>
