@@ -166,8 +166,11 @@
 
 <nav class="navbar">
     <div class="navbar-brand">
-        <i class="fas fa-university" style="color: var(--fst-orange); font-size: 26px;"></i>
-        <span>FST | Portail Administratif</span>
+        <a href="https://edumanage-production-7063.up.railway.app/dashboard.jsp"
+           style="text-decoration: none; color: inherit;">
+            <i class="fas fa-university" style="color: var(--fst-orange); font-size: 26px;"></i>
+            <span>FST | Portail Administratif</span>
+        </a>
     </div>
     <div class="navbar-user">
         <span><i class="fas fa-user-circle"></i> <%= admin.getNom() %></span>
