@@ -173,7 +173,7 @@
         </a>
     </div>
     <div class="navbar-user">
-        <span><i class="fas fa-user-circle"></i> <%= admin.getNom() %></span>
+
         <a href="logout" class="btn-logout"><i class="fas fa-sign-out-alt"></i> Déconnexion</a>
     </div>
 </nav>
