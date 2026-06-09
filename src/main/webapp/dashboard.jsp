@@ -169,7 +169,7 @@
         <a href="https://edumanage-production-7063.up.railway.app/dashboard.jsp"
            style="text-decoration: none; color: inherit;">
             <i class="fas fa-university" style="color: var(--fst-orange); font-size: 26px;"></i>
-            <span>FST | Portail Administratif</span>
+            <span>EduManage | FSTM</span>
         </a>
     </div>
     <div class="navbar-user">

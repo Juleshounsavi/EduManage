@@ -71,7 +71,7 @@
 <nav class="navbar">
     <div class="navbar-brand">
         <i class="fas fa-university"></i>
-        <span>FST | Académique</span>
+        <span>EduManage | FSTM</span>
     </div>
     <div style="font-size: 14px;">
         <i class="fas fa-user-circle"></i> <%= admin.getNom() %>
