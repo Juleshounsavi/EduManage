@@ -17,9 +17,6 @@ public class DaoEleveTest {
         eleve.setPrenom("Youssef");
         eleve.setMatricule("M9999");
 
-        em.getTransaction().begin();
-        em.persist(eleve);
-        em.getTransaction().commit();
 
         assertNotNull(eleve);
         assertEquals("Naciri", eleve.getNom());
